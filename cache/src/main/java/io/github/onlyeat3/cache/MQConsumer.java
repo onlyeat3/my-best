@@ -1,5 +1,6 @@
 package io.github.onlyeat3.cache;
 
+import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
@@ -24,6 +25,8 @@ public class MQConsumer implements InitializingBean {
                             String key = split[0];
                             String value = split[1];
                             log.info("消费数据 {}:{}", key, value);
+                            //存入布隆过滤器,虽然写MQ的时候已经存过了，再存一次也没问题
+                            CacheLoader.BLOOM_FILTER.put(key);
                             //写入数据库或者其他比较耗时的操作
                         }
                     } catch (InterruptedException e) {
