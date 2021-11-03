@@ -12,7 +12,7 @@
 ## 使用缓存、不存在的数据
 
 先从redis读，redis不存在时从数据库查，保证业务逻辑正确。缓存和数据库都不存在，爬虫或者恶意请求会频繁触发查redis和数据库。两次都是无效操作，还需要占用web服务的线程。
-可以通过布隆过滤器(bloom filter)提前判断。具体实现可以查看代码的示例[RedisCacheController.java](./src/main/java/io/github/onlyeat3/cache/RedisCacheController.java)
+可以通过布隆过滤器(bloom filter)提前判断。具体实现可以查看代码的示例[RedisCacheController.java](src/main/java/io/github/onlyeat3/mybest/cache/RedisCacheController.java)
 这张图可以让理解流程简单一点
 [时序图](https://www.figma.com/file/c7zO1xI0Xx92aPTgHDBA5m/%E7%BC%93%E5%AD%98%E6%93%8D%E4%BD%9C-%E6%97%B6%E5%BA%8F%E5%9B%BE)
 

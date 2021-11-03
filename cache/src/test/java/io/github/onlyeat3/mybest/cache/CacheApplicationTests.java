@@ -1,4 +1,4 @@
-package io.github.onlyeat3.cache;
+package io.github.onlyeat3.mybest.cache;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

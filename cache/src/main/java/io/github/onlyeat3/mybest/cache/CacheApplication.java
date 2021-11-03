@@ -1,4 +1,4 @@
-package io.github.onlyeat3.cache;
+package io.github.onlyeat3.mybest.cache;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

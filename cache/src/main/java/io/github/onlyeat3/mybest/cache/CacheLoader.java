@@ -1,4 +1,4 @@
-package io.github.onlyeat3.cache;
+package io.github.onlyeat3.mybest.cache;
 
 import cn.hutool.core.util.RandomUtil;
 import com.google.common.hash.BloomFilter;

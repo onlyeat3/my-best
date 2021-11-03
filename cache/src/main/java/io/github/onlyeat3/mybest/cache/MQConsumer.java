@@ -1,6 +1,5 @@
-package io.github.onlyeat3.cache;
+package io.github.onlyeat3.mybest.cache;
 
-import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
